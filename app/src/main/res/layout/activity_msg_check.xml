@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_gradient"
+    android:orientation="vertical"
+    tools:context="com.rt.sm.activity.login.MsgCheckActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/back"
+            android:layout_marginLeft="@dimen/px30"
+            android:src="@mipmap/back_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/back"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="18sp"
+                android:textColor="@color/colorTv"
+                android:text="短信验证码已发送"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="13700000000"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/colorTvL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:text="60s后可重新发送"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/colorTvL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <EditText
+        style="@style/MyTextTv17"
+        android:id="@+id/et_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_bg_h"
+        android:hint="请输入短信验证码"
+        android:paddingLeft="@dimen/px20"
+        android:textColorHint="@color/colorTv" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/MyTextBlack17"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="@dimen/px60"
+        android:background="@drawable/button_bg_white_selector"
+        android:gravity="center"
+        android:text="开始" />
+
+
+    <TextView
+        android:text="点击开始，即表示已阅读并同意《用户协议》"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorTv"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

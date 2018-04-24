@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_gradient"
+    tools:context="com.rt.sm.activity.ModelChoiceActivity">
+
+    <RelativeLayout
+        android:background="@color/colorBg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px88">
+        <LinearLayout
+            android:id="@+id/back"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px18"
+                android:src="@mipmap/back_icon"
+                android:scaleType="fitXY"
+                android:layout_width="@dimen/px24"
+                android:layout_height="@dimen/px42" />
+            <TextView
+                android:text="返回"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px10"
+                style="@style/MyTextTvHavey17"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="模式选择"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            style="@style/MyTextTv17"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_bg_h"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:text="私人模式"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+
+        <TextView
+            android:text="当前选择"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_bg_h"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:text="儿童模式"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_bg_h"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:text="孕妇模式"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_bg_h"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:text="止鼾模式"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="＊儿童模式将禁用升降功能"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>

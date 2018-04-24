@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="searchedit">
+        <attr name="imagewidth" format="boolean"></attr>
+        <attr name="gtextSize" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <!-- RTextView -->
+    <declare-styleable name="RTextView">
+        <attr name="tSize" format="dimension"/>
+        <attr name="tText" format="string" />
+        <attr name="tColor" format="color" />
+        <attr name="tbgColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="HeartRateLine">
+        <attr name="pulses" format="integer"/>
+        <attr name="pointsOfEachPulse" format="integer"/>
+        <attr name="speed" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SinView">
+        <attr name="amplitude" format="dimension|reference" />
+        <attr name="glineColor" format="color|reference" />
+        <attr name="backColor" format="color|reference" />
+        <attr name="frequency" format="float" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RectTanglerView">
+        <attr name="offset" format="integer"/>
+        <attr name="rColor" format="color|reference" />
+    </declare-styleable>
+
+
+
+</resources>

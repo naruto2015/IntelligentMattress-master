@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="@dimen/px60"
+        android:id="@+id/switchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80">
+
+        <TextView
+            android:id="@+id/mattressInfo"
+            style="@style/MyTextWhite17"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_bg_h"
+            android:hint="主卧的床垫（型号:AX12345)"
+            android:paddingLeft="@dimen/px20"
+            android:textColorHint="@color/colorWhite"
+            />
+
+        <TextView
+            android:id="@+id/nowMattress"
+            android:text="当前选择"
+            android:gravity="center"
+            style="@style/MyTextWhite17"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+

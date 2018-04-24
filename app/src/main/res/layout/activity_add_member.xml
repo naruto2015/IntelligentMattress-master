@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_gradient">
+
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:background="@color/colorBg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px88">
+        <LinearLayout
+            android:id="@+id/back"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px18"
+                android:src="@mipmap/back_icon"
+                android:scaleType="fitXY"
+                android:layout_width="@dimen/px24"
+                android:layout_height="@dimen/px42" />
+            <TextView
+                android:text="返回"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px10"
+                style="@style/MyTextTvHavey17"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="添加新成员"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            style="@style/MyTextTv17"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.rt.sm.view.CircleImageView
+                android:id="@+id/profile_image"
+                android:visibility="gone"
+                android:src="@drawable/no_head"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <com.rt.sm.view.CircleTexView
+                android:id="@+id/setheadimg"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:tSize="14sp"
+                app:tColor="@color/colorTv"
+                app:tText="设置头像"
+                app:tbgColor="@color/colorTvH"
+                />
+
+
+            <EditText
+                style="@style/MyTextTv17"
+                android:background="@drawable/edit_bg_h"
+                android:hint="姓名"
+                android:id="@+id/et_name"
+                android:textColorHint="@color/colorTv"
+                android:layout_width="@dimen/px300"
+                android:layout_height="@dimen/px80"
+                android:layout_marginTop="@dimen/px20"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                />
+
+
+            <com.rt.sm.view.SwitchView
+                android:id="@+id/sex"
+                android:layout_marginTop="@dimen/px30"
+                android:layout_gravity="center_horizontal"
+                app:tSize="14sp"
+                android:layout_width="@dimen/px300"
+                android:layout_height="@dimen/px80" />
+
+            <EditText
+                style="@style/MyTextTv17"
+                android:id="@+id/et_weight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px80"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/px30"
+                android:layout_marginRight="@dimen/px30"
+                android:layout_marginTop="@dimen/px40"
+                android:background="@drawable/edit_bg_h"
+                android:hint="请输入体重(kg)"
+                android:gravity="center"
+                android:paddingLeft="@dimen/px20"
+                android:textColorHint="@color/colorTv" />
+
+
+            <EditText
+                style="@style/MyTextTv17"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px80"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/px30"
+                android:layout_marginRight="@dimen/px30"
+                android:layout_marginTop="@dimen/px40"
+                android:background="@drawable/edit_bg_h"
+                android:id="@+id/et_hieght"
+                android:hint="请输入身高(厘米)"
+                android:gravity="center"
+                android:paddingLeft="@dimen/px20"
+                android:textColorHint="@color/colorTv" />
+
+
+            <TextView
+                style="@style/MyTextTv17"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px80"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/px30"
+                android:layout_marginRight="@dimen/px30"
+                android:layout_marginTop="@dimen/px40"
+                android:background="@drawable/edit_bg_h"
+                android:hint="请输入出生日期"
+                android:gravity="center"
+                android:id="@+id/tv_birth"
+                android:paddingLeft="@dimen/px20"
+                android:textColorHint="@color/colorTv" />
+
+
+            <EditText
+                style="@style/MyTextTv17"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px80"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/px30"
+                android:layout_marginRight="@dimen/px30"
+                android:layout_marginTop="@dimen/px40"
+                android:background="@drawable/edit_bg_h"
+                android:hint="请输入血型"
+                android:gravity="center"
+                android:id="@+id/et_blood"
+                android:paddingLeft="@dimen/px20"
+                android:textColorHint="@color/colorTv" />
+
+
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/MyTextBlack17"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px80"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/px30"
+                android:layout_marginRight="@dimen/px30"
+                android:layout_marginTop="@dimen/px60"
+                android:background="@drawable/button_bg_white_selector"
+                android:gravity="center"
+                android:text="继续" />
+
+            <TextView
+                android:text="为了睡眠报告的更准确，请确保所填写信息真实有效"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorTv"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="我们会保障您的隐私安全，请放心填写"
+                android:textSize="14sp"
+                android:textColor="@color/colorTv"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

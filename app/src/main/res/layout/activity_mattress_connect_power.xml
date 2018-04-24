@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_gradient">
+
+
+    <RelativeLayout
+        android:background="@color/colorBg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px88">
+        <LinearLayout
+            android:id="@+id/back"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px18"
+                android:src="@mipmap/back_icon"
+                android:scaleType="fitXY"
+                android:layout_width="@dimen/px24"
+                android:layout_height="@dimen/px42" />
+            <TextView
+                android:text="返回"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px10"
+                style="@style/MyTextTvHavey17"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="添加床垫"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            style="@style/MyTextTv17"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="18dp"
+        android:textColor="@color/colorTv"
+        android:text="确认床垫已连接电源"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorTvL"
+        android:text="床垫接通电源后，等待指示灯亮起"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/mattresadd"
+            android:layout_width="200dp"
+            android:layout_height="270dp" />
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_login"
+            style="@style/MyTextBlack17"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px80"
+            android:layout_marginLeft="@dimen/px30"
+            android:layout_marginRight="@dimen/px30"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_bg_white_selector"
+            android:gravity="center"
+            android:text="已看到灯亮" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

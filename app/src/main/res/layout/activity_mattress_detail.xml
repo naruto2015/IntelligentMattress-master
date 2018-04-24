@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_gradient"
+    android:orientation="vertical"
+    tools:context="com.rt.sm.activity.mattress.AddMatressWifiActivity">
+
+
+    <RelativeLayout
+        android:background="@color/colorBg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px88">
+        <LinearLayout
+            android:id="@+id/back"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px18"
+                android:src="@mipmap/back_icon"
+                android:scaleType="fitXY"
+                android:layout_width="@dimen/px24"
+                android:layout_height="@dimen/px42" />
+            <TextView
+                android:text="返回"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px10"
+                style="@style/MyTextTvHavey17"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:text="床垫详情"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            style="@style/MyTextTv17"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/icon_delete"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px18"
+            android:src="@mipmap/icon_delete"
+            android:scaleType="fitXY"
+            android:layout_width="@dimen/px42"
+            android:layout_height="@dimen/px42" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@mipmap/mattresadd"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="300dp" />
+
+
+
+    <TextView
+        android:id="@+id/mattressType"
+        style="@style/MyTextTv17"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="@dimen/px60"
+        android:background="@drawable/tv_bg_bluedark"
+        android:paddingLeft="@dimen/px20"
+        android:text="床垫型号:"
+        android:gravity="center_vertical"
+        android:textColorHint="@color/colorTv" />
+
+    <TextView
+        android:id="@+id/mattressSize"
+        style="@style/MyTextTv17"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/tv_bg_bluedark"
+        android:paddingLeft="@dimen/px20"
+        android:text="床垫尺寸"
+        android:gravity="center_vertical"
+        android:textColorHint="@color/colorTv" />
+
+    <RelativeLayout
+        android:id="@+id/mattress_manager"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_bg_h"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30">
+
+        <TextView
+            android:id="@+id/mattressName"
+            style="@style/MyTextTv17"
+            android:paddingLeft="@dimen/px20"
+            android:text="卧室的床垫"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/number_arrow_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

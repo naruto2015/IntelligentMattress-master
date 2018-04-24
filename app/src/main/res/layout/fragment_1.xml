@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/mattressName"
+            style="@style/MyTextTv20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px30"
+            android:layout_marginTop="@dimen/px30"
+            android:text="主卧的智能床垫" />
+
+        <TextView
+            android:layout_below="@id/mattressName"
+            android:id="@+id/mattressModel"
+            style="@style/MyTextTvHavey14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px10"
+            android:layout_marginLeft="@dimen/px30"
+            android:text="型号:AX23456" />
+
+        <ImageView
+            android:id="@+id/iv_bluetooth"
+            android:layout_width="@dimen/px40"
+            android:layout_height="@dimen/px40"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px30"
+            android:layout_marginTop="@dimen/px30"
+            android:src="@mipmap/navicon_5l" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            style="@style/MyTextTv14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px15"
+            android:layout_marginTop="@dimen/px36"
+            android:layout_toLeftOf="@+id/iv_bluetooth"
+            android:text="蓝牙未连接"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/px30"
+        android:background="@drawable/button_bg_white">
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/status_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#BBB8D5"></View>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/add_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/px360"
+                        android:src="@mipmap/iv_add_matt" />
+
+                    <TextView
+                        style="@style/MyTextTv20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_add"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/px30"
+                        android:text="点此添加智能床垫"
+                        android:textColor="@color/colorPrimary" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/adjust_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp">
+
+                        <com.rt.sm.view.CircleImageView
+                            android:id="@+id/man"
+                            android:layout_width="@dimen/px110"
+                            android:layout_height="@dimen/px110"
+                            android:layout_marginTop="@dimen/px30"
+                            android:layout_marginLeft="@dimen/px122"
+                            android:src="@drawable/no_head" />
+
+                        <com.rt.sm.view.CircleImageView
+                            android:id="@+id/women"
+                            android:layout_width="@dimen/px110"
+                            android:layout_height="@dimen/px110"
+                            android:layout_marginTop="@dimen/px30"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/px122"
+                            android:src="@drawable/no_head" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px120"
+                        android:background="@color/colorGraybg">
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/adjust_async_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px122"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/MyTextTvblack14"
+                                android:layout_width="@dimen/px110"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/px30"
+                                android:gravity="center"
+                                android:text="床头" />
+
+                            <com.rt.sm.view.CircleTexView
+                                android:id="@+id/lrise"
+                                android:layout_width="@dimen/px110"
+                                android:layout_height="@dimen/px110"
+                                android:layout_marginTop="10dp"
+                                app:tColor="@color/colorWhite"
+                                app:tSize="14sp"
+                                app:tText="升"
+                                app:tbgColor="@color/colorTvL" />
+
+                            <com.rt.sm.view.CircleTexView
+                                android:id="@+id/ldrop"
+                                android:layout_width="@dimen/px110"
+                                android:layout_height="@dimen/px110"
+                                android:layout_marginTop="20dp"
+                                app:tColor="@color/colorWhite"
+                                app:tSize="14sp"
+                                app:tText="降"
+                                app:tbgColor="@color/colorTvL" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/tv_sync"
+                            android:layout_marginRight="@dimen/px126"
+                            android:layout_marginTop="@dimen/px194"
+                            android:src="@mipmap/brn_sync_ajust"
+                            android:layout_width="@dimen/px120"
+                            android:layout_height="@dimen/px44" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/px122"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/MyTextTvblack14"
+                                android:layout_width="@dimen/px110"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/px30"
+                                android:gravity="center"
+                                android:text="床尾" />
+
+
+                            <com.rt.sm.view.CircleTexView
+                                android:id="@+id/rrise"
+                                android:layout_width="@dimen/px110"
+                                android:layout_height="@dimen/px110"
+                                android:layout_marginTop="10dp"
+                                app:tColor="@color/colorWhite"
+                                app:tSize="14sp"
+                                app:tText="升"
+                                app:tbgColor="@color/colorTvL" />
+
+                            <com.rt.sm.view.CircleTexView
+                                android:id="@+id/rdrop"
+                                android:layout_width="@dimen/px110"
+                                android:layout_height="@dimen/px110"
+                                android:layout_marginTop="20dp"
+                                app:tColor="@color/colorWhite"
+                                app:tSize="14sp"
+                                app:tText="降"
+                                app:tbgColor="@color/colorTvL" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                       android:visibility="gone"
+                        android:id="@+id/adjust_sync_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:id="@+id/aloneAdjustL"
+                            android:layout_marginLeft="@dimen/px126"
+                            android:layout_marginTop="@dimen/px194"
+                            android:src="@mipmap/btn_async_ajust"
+                            android:layout_width="@dimen/px120"
+                            android:layout_height="@dimen/px44" />
+
+
+
+                        <ImageView
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/aloneAdjustR"
+                            android:layout_marginRight="@dimen/px126"
+                            android:layout_marginTop="@dimen/px194"
+                            android:src="@mipmap/btn_async_ajust"
+                            android:layout_width="@dimen/px120"
+                            android:layout_height="@dimen/px44" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="40dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/MyTextTvblack14"
+                                android:layout_width="@dimen/px126"
+                                android:layout_height="@dimen/px40"
+                                android:layout_marginTop="@dimen/px30"
+                                android:gravity="center"
+                                android:text="床头/床尾" />
+
+                            <com.rt.sm.view.CircleTexView
+                                android:id="@+id/syncrise"
+                                android:layout_width="@dimen/px100"
+                                android:layout_height="@dimen/px100"
+                                android:layout_marginTop="@dimen/px30"
+                                app:tColor="@color/colorWhite"
+                                app:tSize="14sp"
+                                app:tText="升"
+                                app:tbgColor="@color/colorTvL" />
+
+                            <com.rt.sm.view.CircleTexView
+                                android:id="@+id/syncdrop"
+                                android:layout_width="@dimen/px100"
+                                android:layout_height="@dimen/px100"
+                                android:layout_marginTop="@dimen/px30"
+                                app:tColor="@color/colorWhite"
+                                app:tSize="14sp"
+                                app:tText="降"
+                                app:tbgColor="@color/colorTvL" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px122"
+                        android:layout_marginRight="@dimen/px122">
+
+                        <TextView
+                            style="@style/MyTextTvblack14"
+                            android:layout_width="@dimen/px110"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/px50"
+                            android:gravity="center"
+                            android:text="硬度" />
+
+
+                        <TextView
+                            style="@style/MyTextTvblack14"
+                            android:layout_width="@dimen/px110"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/px50"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="硬度" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/lhardness_cut"
+                                android:layout_marginLeft="@dimen/px62"
+                                android:layout_width="@dimen/px60"
+                                android:layout_height="@dimen/px60"
+                                android:layout_gravity="center_vertical"
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/brn_minus" />
+
+                            <TextView
+                                android:id="@+id/tv_lnum"
+                                android:layout_width="@dimen/px110"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/lhardness_plus"
+                                android:layout_width="@dimen/px60"
+                                android:layout_height="@dimen/px60"
+                                android:layout_gravity="center_vertical"
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/brn_plus" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/rhardness_cut"
+                                android:layout_width="@dimen/px60"
+                                android:layout_height="@dimen/px60"
+                                android:layout_gravity="center_vertical"
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/brn_minus" />
+
+                            <TextView
+                                android:id="@+id/tv_rnum"
+                                android:layout_width="@dimen/px110"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/rhardness_plus"
+                                android:layout_marginRight="@dimen/px62"
+                                android:layout_width="@dimen/px60"
+                                android:layout_height="@dimen/px60"
+                                android:src="@mipmap/brn_plus" />
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <com.rt.sm.view.ProgressView
+                        android:id="@+id/stallsView"
+                        android:layout_marginTop="@dimen/px60"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/px118"
+                        android:layout_marginRight="@dimen/px118"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/px54"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/check_status"
+                        android:layout_width="@dimen/px400"
+                        android:layout_height="@dimen/px100"
+                        android:layout_below="@+id/status_layout"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/btn_check_status"
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/status_relayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/status_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.rt.sm.view.CircleImageView
+                                    android:id="@+id/mheadimg"
+                                    android:scaleType="centerCrop"
+                                    android:layout_width="@dimen/px140"
+                                    android:layout_height="@dimen/px140"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="30dp"
+                                    android:src="@drawable/no_head" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/mheadimg"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/MyTextTvblack14"
+                                        android:layout_marginTop="@dimen/px16"
+                                        android:id="@+id/mname"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="睡眠人1" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/px30">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:text="当前心跳"
+                                            android:textColor="@color/colorDarkRed" />
+
+                                        <TextView
+                                            android:id="@+id/lheartrate"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="5dp"
+                                            android:text="0次/分钟"
+                                            android:textColor="@color/colorDarkRed" />
+
+                                    </RelativeLayout>
+
+                                    <com.rt.sm.view.HeartRateLine
+                                        android:id="@+id/lHeart"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/px60"
+                                        android:layout_marginRight="@dimen/px30"
+                                        android:layout_marginLeft="@dimen/px30"
+                                        android:layout_marginTop="@dimen/px40" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10px">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:text="当前呼吸"
+                                            android:textColor="@color/breathgreen" />
+
+                                        <TextView
+                                            android:id="@+id/lbreathrate"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="5dp"
+                                            android:text="0次/分钟"
+                                            android:textColor="@color/breathgreen" />
+
+                                    </RelativeLayout>
+
+                                    <com.rt.sm.view.SinView
+                                        android:id="@+id/lbreathsinview"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/px60"
+                                        android:layout_marginRight="@dimen/px30"
+                                        android:layout_marginLeft="@dimen/px30"
+                                        android:layout_marginTop="@dimen/px40"
+                                        android:paddingBottom="10dp"
+                                        android:paddingTop="10dp"
+                                        app:amplitude="100dp"
+                                        app:frequency="100"
+                                        app:glineColor="@color/breathgreen" />
+
+
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10px">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:text="当前体动"
+                                            android:textColor="@color/actioncolor" />
+
+                                        <TextView
+                                            android:visibility="gone"
+                                            android:id="@+id/lbodyhrate"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="5dp"
+                                            android:text="0"
+                                            android:textColor="@color/actioncolor" />
+
+                                    </RelativeLayout>
+
+                                    <com.rt.sm.view.BodyMoveView
+                                        android:id="@+id/lbodyMoView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/px60"
+                                        android:layout_marginRight="@dimen/px30"
+                                        android:layout_marginLeft="@dimen/px30"
+                                        android:layout_marginTop="@dimen/px40"
+                                        />
+
+                                    <com.rt.sm.view.RectTanglerView
+                                        android:visibility="gone"
+                                        android:id="@+id/lbodyView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/px60"
+                                        android:layout_marginRight="@dimen/px30"
+                                        android:layout_marginLeft="@dimen/px30"
+                                        android:layout_marginTop="@dimen/px40"
+                                        app:rColor="@color/actioncolor" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="当前打鼾"
+                                        android:textColor="@color/sorning" />
+
+                                    <com.rt.sm.view.SnorView
+                                        android:id="@+id/lSnorView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/px60"
+                                        android:layout_marginRight="@dimen/px30"
+                                        android:layout_marginLeft="@dimen/px30"
+                                        android:layout_marginTop="@dimen/px40"
+                                        />
+
+                                    <com.rt.sm.view.RectTanglerView
+                                        android:visibility="gone"
+                                        android:id="@+id/lsnorView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/px60"
+                                        android:layout_marginRight="@dimen/px30"
+                                        android:layout_marginLeft="@dimen/px30"
+                                        android:layout_marginTop="@dimen/px40"
+                                        app:offset="30"
+                                        app:rColor="@color/sorning" />
+
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.rt.sm.view.CircleImageView
+                                    android:id="@+id/wheadimg"
+                                    android:scaleType="centerCrop"
+                                    android:layout_width="@dimen/px140"
+                                    android:layout_height="@dimen/px140"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="30dp"
+                                    android:src="@drawable/no_head" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_below="@+id/wheadimg"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/wname"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        style="@style/MyTextTvblack14"
+                                        android:layout_marginTop="@dimen/px16"
+                                        android:gravity="center"
+                                        android:text="睡眠人2" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/px30">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:text="当前心跳"
+                                            android:textColor="@color/colorDarkRed" />
+
+                                        <TextView
+                                            android:id="@+id/rheartrate"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="5dp"
+                                            android:text="0次/分钟"
+                                            android:textColor="@color/colorDarkRed" />
+
+                                    </RelativeLayout>
+
+                                    <com.rt.sm.view.HeartRateLine
+                                        android:id="@+id/rHeart"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/px60"
+                                        android:layout_marginRight="@dimen/px30"
+                                        android:layout_marginLeft="@dimen/px30"
+                                        android:layout_marginTop="@dimen/px40" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10px">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:text="当前呼吸"
+                                            android:textColor="@color/breathgreen" />
+
+                                        <TextView
+                                            android:id="@+id/rbreathrate"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="5dp"
+                                            android:text="0次/分钟"
+                                            android:textColor="@color/breathgreen" />
+
+                                    </RelativeLayout>
+
+                                    <com.rt.sm.view.SinView
+                                        android:id="@+id/rbreatheView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/px60"
+                                        android:layout_marginRight="@dimen/px30"
+                                        android:layout_marginLeft="@dimen/px30"
+                                        android:layout_marginTop="@dimen/px40"
+                                        android:paddingBottom="10dp"
+                                        android:paddingTop="10dp"
+                                        app:amplitude="100dp"
+                                        app:frequency="100"
+                                        app:glineColor="@color/breathgreen" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10px">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="5dp"
+                                            android:text="当前体动"
+                                            android:textColor="@color/actioncolor" />
+
+                                        <TextView
+                                            android:visibility="gone"
+                                            android:id="@+id/rbodyhrate"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="5dp"
+                                            android:text="0"
+                                            android:textColor="@color/actioncolor" />
+
+                                    </RelativeLayout>
+
+
+                                    <com.rt.sm.view.BodyMoveView
+                                        android:id="@+id/rbodyMoView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/px60"
+                                        android:layout_marginRight="@dimen/px30"
+                                        android:layout_marginLeft="@dimen/px30"
+                                        android:layout_marginTop="@dimen/px40"
+                                         />
+
+
+                                    <com.rt.sm.view.RectTanglerView
+                                        android:visibility="gone"
+                                        android:id="@+id/rbodyView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/px60"
+                                        android:layout_marginRight="@dimen/px30"
+                                        android:layout_marginLeft="@dimen/px30"
+                                        android:layout_marginTop="@dimen/px40"
+                                        app:rColor="@color/actioncolor" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="当前打鼾"
+                                        android:textColor="@color/sorning" />
+
+
+                                    <com.rt.sm.view.SnorView
+                                        android:id="@+id/rSnorView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/px60"
+                                        android:layout_marginRight="@dimen/px30"
+                                        android:layout_marginLeft="@dimen/px30"
+                                        android:layout_marginTop="@dimen/px40"
+                                        />
+
+                                    <com.rt.sm.view.RectTanglerView
+                                        android:visibility="gone"
+                                        android:id="@+id/rsnorView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/px60"
+                                        android:layout_marginRight="@dimen/px30"
+                                        android:layout_marginLeft="@dimen/px30"
+                                        android:layout_marginTop="@dimen/px40"
+                                        app:offset="30"
+                                        app:rColor="@color/sorning" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_marginTop="@dimen/px54"
+                        android:layout_marginBottom="20dp"
+                        android:id="@+id/btn_ajust_mattress"
+                        android:layout_width="@dimen/px400"
+                        android:layout_height="@dimen/px100"
+                        android:layout_below="@+id/status_layout"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/btn_ajust"
+                        />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

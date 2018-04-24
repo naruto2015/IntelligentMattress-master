@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_gradient"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/iv_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorBg">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/MyTextTv20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px30"
+            android:text="欢迎使用赫兰迪智能床垫" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorBg">
+
+        <TextView
+            android:id="@+id/tv_subhead"
+            style="@style/MyTextTvHavey14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px10"
+            android:layout_marginLeft="@dimen/px30"
+            android:text="请输入手机号码，登录或注册您的账号" />
+
+    </RelativeLayout>
+
+    <EditText
+        style="@style/MyTextTv17"
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="@dimen/px60"
+        android:background="@drawable/edit_bg_h"
+        android:hint="请输入手机号"
+        android:paddingLeft="@dimen/px20"
+        android:textColorHint="@color/colorTv" />
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_marginTop="@dimen/px30">
+
+        <EditText
+            android:id="@+id/iv_code"
+            style="@style/MyTextTv17"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px80"
+            android:background="@drawable/edit_bg_h"
+            android:hint="请输入验证码"
+            android:paddingLeft="@dimen/px20"
+            android:textColorHint="@color/colorTv" />
+
+
+        <TextView
+            android:id="@+id/tv_getcode"
+            style="@style/MyTextTvHavey14"
+            android:layout_width="@dimen/px180"
+            android:layout_height="match_parent"
+            android:background="@drawable/tv_right_bg"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="获取验证码" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/MyTextBlack17"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="@dimen/px60"
+        android:background="@drawable/button_bg_white_selector"
+        android:gravity="center"
+        android:text="继续" />
+
+
+
+
+</LinearLayout>

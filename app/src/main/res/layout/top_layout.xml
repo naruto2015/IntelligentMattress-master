@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px40"
+        android:background="@color/colorBg" />
+
+    <RelativeLayout
+        android:id="@+id/iv_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/px30"
+        android:background="@color/colorBg">
+
+        <ImageView
+            android:layout_width="@dimen/px24"
+            android:layout_height="@dimen/px42"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px30"
+            android:src="@mipmap/back_icon" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/MyTextTv20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px82"
+            android:text="Title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorBg">
+
+        <TextView
+            android:id="@+id/tv_subhead"
+            style="@style/MyTextTvHavey14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px10"
+            android:layout_marginLeft="@dimen/px82"
+            android:text="Subhead"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            style="@style/MyTextTvHavey14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_subhead"
+            android:layout_marginLeft="@dimen/px82"
+            android:layout_marginRight="@dimen/px30"
+            android:text="Right"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_gradient"
+    android:orientation="vertical"
+    tools:context="com.rt.sm.activity.mattress.AddMatressWifiActivity">
+
+    <RelativeLayout
+        android:background="@color/colorBg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px88">
+        <LinearLayout
+            android:id="@+id/back"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px18"
+                android:src="@mipmap/back_icon"
+                android:scaleType="fitXY"
+                android:layout_width="@dimen/px24"
+                android:layout_height="@dimen/px42" />
+            <TextView
+                android:text="返回"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px10"
+                style="@style/MyTextTvHavey17"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="成员详情"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            style="@style/MyTextTv17"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/icon_delete"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_delete"
+            android:layout_width="@dimen/px42"
+            android:layout_height="@dimen/px42" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/px60"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+           <com.rt.sm.view.CircleImageView
+               android:id="@+id/profile_image"
+               android:layout_gravity="center_horizontal"
+               android:src="@drawable/no_head"
+               android:layout_width="80dp"
+               android:layout_height="80dp" />
+
+            <EditText
+                android:id="@+id/et_name"
+                style="@style/MyTextTv17"
+                android:background="@drawable/edit_bg_h"
+                android:hint="姓名"
+                android:textColorHint="@color/colorTv"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                />
+
+
+            <com.rt.sm.view.SwitchView
+                android:id="@+id/sex"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                app:tSize="14sp"
+                android:layout_width="130dp"
+                android:layout_height="36dp" />
+
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_bg_h"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:id="@+id/et_weight"
+                    android:text="139"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorTvL"
+                    android:layout_alignParentRight="true"
+                    android:text="kg"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_bg_h"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:id="@+id/et_hieght"
+                    android:text="166"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorTvL"
+                    android:layout_alignParentRight="true"
+                    android:text="cm"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_bg_h"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/tv_birth"
+                    android:text="1990-10-01"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_bg_h"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:id="@+id/et_blood"
+                    android:text="O型"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:background="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_update"
+                style="@style/MyTextBlack17"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px80"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/px30"
+                android:layout_marginRight="@dimen/px30"
+                android:layout_marginTop="@dimen/px60"
+                android:background="@drawable/button_bg_white_selector"
+                android:gravity="center"
+                android:text="保存修改" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_layout" />
+
+    <com.rt.sm.view.CircleImageView
+        android:layout_width="@dimen/px180"
+        android:layout_height="@dimen/px180"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px60"
+        android:src="@drawable/no_head"
+        app:civ_border_color="@color/colorRed"
+        app:civ_border_width="0dp" />
+
+    <EditText
+        style="@style/MyTextTv17"
+        android:layout_width="@dimen/px300"
+        android:layout_height="@dimen/px80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px30"
+        android:background="@drawable/edit_bg_h"
+        android:gravity="center"
+        android:hint="姓名"
+        android:textColorHint="@color/colorTv" />
+
+    <RadioGroup
+        android:layout_width="@dimen/px300"
+        android:layout_height="@dimen/px80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px30"
+        android:background="@color/colorTv">
+
+    </RadioGroup>
+
+    <EditText
+        style="@style/MyTextTv17"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="@dimen/px60"
+        android:background="@drawable/edit_bg_h"
+        android:gravity="center"
+        android:hint="请输入体重(KG)"
+        android:textColorHint="@color/colorTv" />
+
+    <EditText
+        style="@style/MyTextTv17"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="@dimen/px30"
+        android:background="@drawable/edit_bg_h"
+        android:gravity="center"
+        android:hint="请输入身高(CM)"
+        android:textColorHint="@color/colorTv" />
+
+    <TextView
+        style="@style/MyTextTv17"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="@dimen/px30"
+        android:background="@drawable/edit_bg_h"
+        android:gravity="center"
+        android:text="请选择出生日期"
+        android:textColorHint="@color/colorTv" />
+
+    <TextView
+        style="@style/MyTextTv17"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="@dimen/px30"
+        android:background="@drawable/edit_bg_h"
+        android:gravity="center"
+        android:text="请选择血型" />
+
+    <Button
+        style="@style/MyTextBlack17"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"
+        android:layout_marginTop="@dimen/px60"
+        android:background="@drawable/button_bg_white"
+        android:gravity="center"
+        android:text="完成" />
+
+    <TextView
+        style="@style/MyTextTv14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px24"
+        android:gravity="center_horizontal"
+        android:text="为了睡眠报告的更准确，请确保所填信息真实有效\n我们会保障您的隐私安全，请放心填写"
+        android:textSize="@dimen/size26" />
+
+</LinearLayout>

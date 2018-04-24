@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rt.sm">
+
+    <!-- 网络访问权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 网络状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 下载权限 -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 相机权限，数据存储 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 蓝牙开启和搜索权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 读取通讯录 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".common.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/blogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/blogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.StartActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 登录页 -->
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <!-- 注册页 -->
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <!-- 首次登陆信息页 -->
+        <activity
+            android:name=".activity.FirstInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 主页 -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 床垫列表 -->
+        <activity
+            android:name=".activity.mattress.MattessListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.login.MsgCheckActivity" />
+        <activity
+            android:name=".activity.member.AddMemberInfoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.mattress.AjustMattressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ModelChoiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NotificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PublicWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mattress.MattressPrepareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mattress.AddMatressWifiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mattress.MattressConnectPowerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mattress.SearchMattresActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mattress.AddMattressInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mattress.MattressDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.mattress.MattressRenameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.member.MemberListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.member.MemberDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.member.MemberSwitchActivity"
+            android:screenOrientation="portrait" />
+        <!-- 蓝牙搜索界面 -->
+        <activity
+            android:name=".activity.ble.BleSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.member.AddMemberActivity" />
+        <activity android:name=".activity.mattress.MattressWifiConnectActivity"></activity>
+    </application>
+
+</manifest>

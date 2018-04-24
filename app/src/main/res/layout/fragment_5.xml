@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_gradient"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="@dimen/px30"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/img_head"
+            android:src="@mipmap/combined_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+       <com.rt.sm.view.CircleImageView
+           android:id="@+id/img_head"
+           android:layout_marginTop="@dimen/px60"
+           android:layout_centerHorizontal="true"
+           android:src="@drawable/no_head"
+           android:scaleType="centerCrop"
+           android:layout_width="@dimen/px140"
+           android:layout_height="@dimen/px140" />
+
+        <TextView
+            android:text="呢称"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@id/img_head"
+            android:id="@+id/name"
+            android:layout_marginTop="@dimen/px30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:text="138******"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorTvL"
+            android:layout_below="@id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/notification"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_bg_h"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:text="通知"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+                <com.rt.sm.view.NotiNumberView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp" />
+
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/number_arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mattress_manager"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_bg_h"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:text="床垫管理"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/number_arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/member_manager"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_bg_h"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:text="成员管理"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/number_arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/model_choice"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_bg_h"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:text="模式选择"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/number_arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/about"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_bg_h"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:text="关于智能床垫"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/number_arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/logout"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edit_bg_h"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:text="退出登陆"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/colorTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/number_arrow_right"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+            </RelativeLayout>
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/rl_ble"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:background="@drawable/edit_bg_h"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginRight="20dp">-->
+
+                <!--<TextView-->
+                    <!--android:text="蓝牙连接"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:textColor="@color/colorTv"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="40dp" />-->
+                <!--<ImageView-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:src="@mipmap/number_arrow_right"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp" />-->
+
+            <!--</RelativeLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

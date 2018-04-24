@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2B2741</color>
+    <color name="colorPrimaryDark">#2B2741</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--白色-->
+    <color name="colorWhite">#FFFFFF</color>
+    <!--黑色-->
+    <color name="colorBlack">#333333</color>
+    <!--中灰（线条）-->
+    <color name="colorGrayLine">#979797</color>
+
+    <!--中灰（线条）-->
+    <color name="colorGraybg">#f3f2f9</color>
+    <!--轻灰-->
+    <color name="colorGray">#EFEFEF</color>
+    <!--大红色-->
+    <color name="colorRed">#Ec6675</color>
+    <color name="colorDarkRed">#AC4848</color>
+    <!--深红色-->
+    <color name="colorRedHeave">#EE5555</color>
+    <!--黄色-->
+    <color name="colorYellow">#F5CC0C</color>
+    <color name="circlecoloryellow">#FFCC00</color>
+
+    <!--背景色調深-->
+    <color name="colorBg">#2B2741</color>
+    <!--背景色浅-->
+    <color name="colorBgLight">#4F5976</color>
+    <!--文字色调正常-->
+    <color name="colorTv">#8AAAEB</color>
+    <!--文字色调略重-->
+    <color name="colorTvL">#6080C1</color>
+    <!--文字色调略重-->
+    <color name="colorTvH">#435280</color>
+    <!--文字色调正常-->
+    <color name="colorTitle">#c3d7ff</color>
+    <color name="black">#000</color>
+
+    <color name="adjustbg">#78C2FF</color>
+    <color name="adjustbgdark">#2338B3</color>
+
+    <color name="actioncolor">#5848AC</color>
+
+    <color name="breathgreen">#6080C1</color>
+    <color name="circlecolor">#4CD964 </color>
+    <color name="sorning">#48A3AC </color>
+
+    <color name="transparent">#11000000</color>
+
+    <color name="progressstart">#6080C1</color>
+    <color name="progressend">#FF3B30</color>
+    <color name="circle">#4C7AD3</color>
+
+
+</resources>

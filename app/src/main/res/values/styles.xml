@@ -1,0 +1,115 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <!-- 设置activity切换动画 -->
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+
+    <!--Activity侧滑效果-->
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_right</item>
+    </style>
+
+    <!--字体蓝色亮20-->
+    <style name="MyTextTv20">
+        <item name="android:textSize">@dimen/size40</item>
+        <item name="android:textColor">@color/colorTv</item>
+    </style>
+    <!--字体蓝色亮17-->
+    <style name="MyTextTv17">
+        <item name="android:textSize">@dimen/size34</item>
+        <item name="android:textColor">@color/colorTv</item>
+    </style>
+
+    <!--字体蓝色亮17-->
+    <style name="MyTextBlack17">
+        <item name="android:textSize">@dimen/size34</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <!--字体白色17-->
+    <style name="MyTextWhite17">
+        <item name="android:textSize">@dimen/size34</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <!--字体白色17-->
+    <style name="MyTextWhite15">
+        <item name="android:textSize">@dimen/size30</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <!--字体白色17-->
+    <style name="MyTextgreen15">
+        <item name="android:textSize">@dimen/size30</item>
+        <item name="android:textColor">@color/circlecolor</item>
+    </style>
+
+
+
+
+
+    <!--字体蓝色亮14-->
+    <style name="MyTextTv14">
+        <item name="android:textSize">@dimen/size28</item>
+        <item name="android:textColor">@color/colorTv</item>
+    </style>
+
+    <!--字体蓝色亮15-->
+    <style name="MyTextTv15">
+        <item name="android:textSize">@dimen/size30</item>
+        <item name="android:textColor">@color/colorTv</item>
+    </style>
+
+
+
+    <!--字体蓝色略重14-->
+    <style name="MyTextTvHavey14">
+        <item name="android:textSize">@dimen/size28</item>
+        <item name="android:textColor">@color/colorTvL</item>
+    </style>
+
+    <!--字体蓝色略重15-->
+    <style name="MyTextTvHavey15">
+        <item name="android:textSize">@dimen/size30</item>
+        <item name="android:textColor">@color/colorTvL</item>
+    </style>
+
+    <!--字体蓝色略重15-->
+    <style name="MyTextTvHavey17">
+        <item name="android:textSize">@dimen/size34</item>
+        <item name="android:textColor">@color/colorTvL</item>
+    </style>
+
+
+    <style name="MyTextTvblack14">
+        <item name="android:textSize">@dimen/size28</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- 请求Dialog样式 -->
+    <style name="dialog_loading" parent="@android:style/Theme.Dialog">
+        <!-- 设置未浮动窗口 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 设置无边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置完全透明 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 设置屏幕变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+</resources>
